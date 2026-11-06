@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Purehaven Cleaning Co. | Professional Cleaning Services</title>
+
+    <meta name="description" content="Purehaven Cleaning Co. provides professional residential and commercial cleaning services. Request your free estimate today.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                <span class="logo-mark">
+                    <img src="images/purehaven-logo.png" alt="">
+                </span>
+                <span>PUREHAVEN <small>CLEANING CO.</small></span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#estimate" class="nav-button">Get a Free Estimate</a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <main>
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="eyebrow">A CLEANER SPACE. A FRESHER START.</p>
+
+            <h1>A Beautifully Clean Space Starts Here.</h1>
+
+            <p class="hero-description">
+                Experience the difference of a professionally cleaned space.
+                We bring comfort, freshness, and care into every home and business.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#estimate" class="primary-button">Request a Free Estimate</a>
+                <a href="#services" class="secondary-button">Explore Our Services</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="images/living.jpeg" alt="Beautiful clean and organized living room">
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about section-padding" id="about">
+
+        <div class="about-image">
+            <img src="images/kitchen.jpeg" alt="Professional home cleaning">
+        </div>
+
+        <div class="about-content">
+            <p class="eyebrow">ABOUT Purehaven</p>
+
+            <h2>More Than Clean. A Place to Feel at Home.</h2>
+
+            <p>
+                At Purehaven Cleaning Co., we believe a clean environment
+                makes a difference in everyday life. Our goal is to provide
+                dependable, detailed cleaning with care and professionalism.
+            </p>
+
+            <p>
+                Whether you need help maintaining your home or keeping your
+                workplace spotless, we are here to make your space feel fresh
+                and welcoming.
+            </p>
+
+            <a href="#contact" class="text-link">Get to Know Us →</a>
+        </div>
+
+    </section>
+
+
+    <!-- SERVICES SECTION -->
+    <section class="services section-padding" id="services">
+
+        <div class="section-heading">
+            <p class="eyebrow">WHAT WE OFFER</p>
+            <h2>Our Cleaning Services</h2>
+            <p>Thoughtful cleaning solutions for the spaces that matter most.</p>
+        </div>
+
+        <div class="service-grid">
+
+            <article class="service-card">
+                <div class="service-icon">⌂</div>
+                <h3>Residential Cleaning</h3>
+                <p>Keep your home fresh, comfortable, and beautifully maintained.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">✧</div>
+                <h3>Deep Cleaning</h3>
+                <p>A detailed cleaning for the areas that need extra attention.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">▦</div>
+                <h3>Commercial Cleaning</h3>
+                <p>Professional cleaning for offices and business environments.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">◇</div>
+                <h3>Move-In / Move-Out</h3>
+                <p>Prepare your space for a fresh beginning or a smooth move.</p>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-us section-padding">
+
+        <div class="section-heading">
+            <p class="eyebrow">THE Purehaven DIFFERENCE</p>
+            <h2>Why Choose Purehaven?</h2>
+        </div>
+
+        <div class="benefit-grid">
+
+            <div class="benefit">
+                <span>01</span>
+                <h3>Attention to Detail</h3>
+                <p>We care about the little details that make a big difference.</p>
+            </div>
+
+            <div class="benefit">
+                <span>02</span>
+                <h3>Reliable Service</h3>
+                <p>We value your time and strive to provide dependable service.</p>
+            </div>
+
+            <div class="benefit">
+                <span>03</span>
+                <h3>Customer Care</h3>
+                <p>Your satisfaction and comfort are important to us.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FREE ESTIMATE SECTION -->
+    <section class="estimate section-padding" id="estimate">
+
+        <div class="estimate-content">
+            <p class="eyebrow">LET'S GET STARTED</p>
+            <h2>Ready for a Fresher Space?</h2>
+
+            <p>
+                Tell us a little about your cleaning needs.
+                We would love to help you get started with a free estimate.
+            </p>
+        </div>
+
+        <form class="estimate-form" id="estimateForm">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Cleaning Service</label>
+                    <select id="service" name="service" required>
+                        <option value="">Choose a service</option>
+                        <option>Residential Cleaning</option>
+                        <option>Deep Cleaning</option>
+                        <option>Commercial Cleaning</option>
+                        <option>Move-In / Move-Out</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Tell Us About Your Project</label>
+                <textarea id="message" name="message" rows="5" placeholder="How can we help?"></textarea>
+            </div>
+
+            <div hidden>
+                <label for="website">Leave this field blank</label>
+                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <input type="hidden" id="requestId" name="requestId">
+
+            <button type="submit" class="primary-button form-button">
+                Request My Free Estimate
+            </button>
+
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+
+        </form>
+
+        <iframe name="estimateResponse" title="Estimate request response" hidden></iframe>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="contact section-padding" id="contact">
+
+        <div class="section-heading">
+            <p class="eyebrow">GET IN TOUCH</p>
+            <h2>We'd Love to Hear From You.</h2>
+            <p>Have questions? Reach out and let's talk about your cleaning needs.</p>
+        </div>
+
+        <div class="contact-details">
+            <div>
+                <h3>Phone</h3>
+                <p>(916) 495-8148</p>
+            </div>
+
+            <div>
+                <h3>Email</h3>
+                <p>purehavendish@gmail.com</p>
+            </div>
+
+            <div>
+                <h3>Service Area</h3>
+                <p>We service Lexington, Nicholasville, Wilmore, Richmond, and many more!</p>
+            </div>
+        </div>
+
+    </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-content">
+            <div>
+                <h3>Purehaven Cleaning Co.</h3>
+                <p>A cleaner space. A fresher start.</p>
+            </div>
+
+            <p>© <span id="year"></span> Purehaven Cleaning Co. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

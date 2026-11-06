@@ -1,0 +1,683 @@
+
+/* ==============================
+   1. GENERAL STYLES
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: #26352e;
+    background-color: #fbfaf6;
+    line-height: 1.7;
+}
+
+:root {
+    --green: #244b3b;
+    --dark-green: #183629;
+    --cream: #fbfaf6;
+    --gold: #b99a62;
+    --text: #26352e;
+    --muted: #737e76;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+.section-padding {
+    padding: 100px 8%;
+}
+
+
+/* ==============================
+   2. HEADER AND NAVIGATION
+============================== */
+
+.header {
+    width: 100%;
+    background-color: #000;
+    z-index: 100;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.04);
+}
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    padding: 14px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    font-weight: 700;
+    color: var(--gold);
+}
+
+.logo-mark {
+    position: relative;
+    display: block;
+    width: 54px;
+    height: 56px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.logo-mark img {
+    position: absolute;
+    top: -18px;
+    left: -38px;
+    width: 130px;
+    max-width: none;
+    height: auto;
+    object-fit: initial;
+}
+
+.logo small {
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--gold);
+    font-size: 10px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--cream);
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+.nav-button {
+    background-color: var(--green);
+    color: white;
+    padding: 12px 22px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: var(--dark-green);
+}
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: none;
+    color: var(--gold);
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* ==============================
+   3. HERO SECTION
+============================== */
+
+.hero {
+    min-height: 620px;
+    padding: 75px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+    background-color: #f1f0e8;
+}
+
+.hero-content {
+    max-width: 580px;
+}
+
+.eyebrow {
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 5vw, 65px);
+    line-height: 1.12;
+    color: var(--green);
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    color: var(--muted);
+    font-size: 16px;
+    max-width: 480px;
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.primary-button {
+    border: 1px solid var(--green);
+    background-color: var(--green);
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: var(--dark-green);
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+
+.secondary-button:hover {
+    background-color: var(--green);
+    color: white;
+}
+
+.hero-image {
+    height: 440px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.hero-image img {
+    height: 100%;
+}
+
+
+/* ==============================
+   4. ABOUT SECTION
+============================== */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.about-image {
+    height: 430px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.about-image img {
+    height: 100%;
+}
+
+.about-content h2,
+.section-heading h2,
+.estimate-content h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--green);
+    font-size: clamp(32px, 4vw, 43px);
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.about-content p:not(.eyebrow) {
+    color: var(--muted);
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--green);
+    font-weight: 700;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 4px;
+}
+
+
+/* ==============================
+   5. SERVICES SECTION
+============================== */
+
+.services {
+    background-color: #f1f0e8;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 55px;
+}
+
+.section-heading > p:last-child {
+    color: var(--muted);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 35px 25px;
+    border-radius: 5px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    border-bottom-color: var(--gold);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.service-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f0e8;
+    color: var(--green);
+    font-size: 25px;
+    border-radius: 50%;
+    margin-bottom: 22px;
+}
+
+.service-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--green);
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+
+/* ==============================
+   6. WHY CHOOSE US
+============================== */
+
+.why-us {
+    background-color: var(--green);
+    color: white;
+}
+
+.why-us .section-heading h2 {
+    color: white;
+}
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}
+
+.benefit {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 25px;
+}
+
+.benefit span {
+    color: var(--gold);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.benefit h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    margin: 15px 0 10px;
+}
+
+.benefit p {
+    color: #d0d9d2;
+    font-size: 14px;
+}
+
+
+/* ==============================
+   7. FREE ESTIMATE FORM
+============================== */
+
+.estimate {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: start;
+    gap: 65px;
+}
+
+.estimate-content p:not(.eyebrow) {
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.estimate-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--green);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #e1e4df;
+    border-radius: 4px;
+    background-color: #fbfaf6;
+    outline: none;
+    color: var(--text);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--green);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-button {
+    width: 100%;
+    border: none;
+}
+
+.form-message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: var(--green);
+}
+
+.form-message[data-status="error"] {
+    color: #a12c2c;
+}
+
+
+/* ==============================
+   8. CONTACT SECTION
+============================== */
+
+.contact {
+    background-color: #f1f0e8;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    text-align: center;
+}
+
+.contact-details > div {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 5px;
+}
+
+.contact-details h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--green);
+    margin-bottom: 8px;
+}
+
+.contact-details p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+
+/* ==============================
+   9. FOOTER
+============================== */
+
+.footer {
+    background-color: var(--dark-green);
+    color: white;
+    padding: 35px 8%;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.footer h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    color: var(--gold);
+}
+
+.footer p {
+    color: #cbd4ce;
+    font-size: 13px;
+}
+
+
+/* ==============================
+   10. RESPONSIVE DESIGN
+============================== */
+
+@media (max-width: 1000px) {
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .estimate {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .section-padding {
+        padding: 70px 6%;
+    }
+
+    .navbar {
+        padding: 15px 6%;
+    }
+
+    .logo {
+        gap: 8px;
+        font-size: 20px;
+    }
+
+    .logo-mark {
+        width: 46px;
+        height: 48px;
+    }
+
+    .logo-mark img {
+        top: -16px;
+        left: -34px;
+        width: 114px;
+    }
+
+    .logo small {
+        font-size: 8px;
+        letter-spacing: 2.2px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        background-color: #000;
+        padding: 15px 6%;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(251, 250, 246, 0.2);
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 65px 6%;
+    }
+
+    .hero-image {
+        height: 320px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-image {
+        height: 320px;
+    }
+
+    .benefit-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-details {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .estimate-form {
+        padding: 25px 18px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons a {
+        text-align: center;
+    }
+
+}
